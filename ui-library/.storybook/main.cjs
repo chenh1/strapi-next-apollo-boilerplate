@@ -1,4 +1,18 @@
+const { mergeConfig } = require('vite');
+const svgr = require('vite-plugin-svgr');
+
 module.exports = {
+  async viteFinal(config, { configType }) {
+    // return the customized config
+    return mergeConfig(config, {
+      // customize the Vite config here
+      plugins: [svgr({
+        svgrOptions: {
+          icon: true,
+        },
+      })]
+    });
+  },
   "stories": [
     "../src/**/*.stories.mdx",
     "../src/**/*.stories.@(js|jsx|ts|tsx)"

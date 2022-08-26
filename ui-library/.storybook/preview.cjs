@@ -1,13 +1,11 @@
+//import { useEffect } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { addDecorator } from '@storybook/react';
 import { withThemes } from '@react-theming/storybook-addon';
-
-const theme = {
-    name: "Core",
-}
+import defaultTheme from '../src/themes/default';
 
 export const decorators = [
-    withThemes(ThemeProvider, [ theme ])
+    withThemes(ThemeProvider, [ defaultTheme ])
 ]
 
 export const parameters = {
