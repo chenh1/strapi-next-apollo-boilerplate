@@ -8,9 +8,9 @@
     "build-vite": "vite build",
     "preview": "vite preview",
     "start": "start-storybook -p 6006",
-    "build": "build-storybook",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "build": "npm run build-storybook && npx tailwindcss -i ./src/style.css -o ./dist/style.css"
   },
   "dependencies": {
     "react": "^18.2.0",

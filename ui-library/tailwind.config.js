@@ -10,6 +10,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
+    fontFamily: {
+      headings: ['"Space Grotesk"', 'sans-serif'],
+      body: ['"Lato"', 'sans-serif'],
+    }
   },
   variants: {
     extend: {},

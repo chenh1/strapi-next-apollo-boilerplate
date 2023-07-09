@@ -19,8 +19,8 @@ const getSizeClasses = (size) => {
 
 const getModeClasses = (isPrimary) =>
   isPrimary
-    ? 'text-white bg-pink-600 border-pink-600 dark:bg-pink-700 dark:border-pink-700'
-    : 'text-slate-700 bg-transparent border-slate-700 dark:text-black dark:border-black';
+    ? 'font-headings text-white bg-pink-600 border-pink-600 dark:bg-pink-700 dark:border-pink-700'
+    : 'font-headings text-slate-700 bg-transparent border-slate-700 dark:text-black dark:border-black';
 
 const BASE_BUTTON_CLASSES =
   'cursor-pointer rounded-full border-2 font-bold leading-none inline-block';
