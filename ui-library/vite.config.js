@@ -8,5 +8,7 @@ export default defineConfig({
     svgrOptions: {
       icon: true,
     },
+    tailwindcss: {},
+    autoprefixer: {},
   })]
 })
